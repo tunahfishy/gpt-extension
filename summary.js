@@ -9,9 +9,8 @@ chrome.contextMenus.create({
   contexts: ["selection"],
   onclick: getQuestions,
 });
-p
 
-OpenAIKey = "sk-replace"
+OpenAIKey = "sk-replace";
 function summarizeSelection(info, tab) {
   let selectedText = info.selectionText.trim();
   fetch("https://api.openai.com/v1/completions", {
